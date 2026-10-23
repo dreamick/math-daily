@@ -13,16 +13,26 @@
   header{padding:18px 16px 10px; max-width:720px; margin:0 auto;}
   h1{font-size:20px; margin:0 0 4px;}
   .sub{font-size:13px; color:var(--muted);}
-  main{max-width:720px; margin:0 auto; padding:6px 12px 40px;}
+  .badge{display:inline-block; margin-top:8px; padding:3px 9px; border-radius:999px;
+         background:rgba(153,60,29,.1); color:var(--clay); font-size:11.5px;}
+  main{max-width:720px; margin:0 auto; padding:6px 12px 30px;}
   figure{margin:0 0 14px; background:var(--card); border-radius:12px; overflow:hidden;
          box-shadow:0 1px 6px rgba(0,0,0,.07);}
   figure img{display:block; width:100%; height:auto;}
   figcaption{font-size:12px; color:var(--muted); padding:8px 12px;}
   details{background:var(--card); border-radius:12px; padding:12px 14px; margin:6px 0 14px;
           box-shadow:0 1px 6px rgba(0,0,0,.07);}
+  details[open]{padding-bottom:2px;}
   summary{font-size:15px; font-weight:600; color:var(--clay); cursor:pointer;}
-  .pdf{display:inline-block; margin:4px 0 18px; padding:9px 14px; border-radius:999px;
+  .pdf{display:inline-block; margin:4px 0 22px; padding:9px 14px; border-radius:999px;
        background:var(--clay); color:#fff; font-size:14px; text-decoration:none;}
+  .history{max-width:720px; margin:0 auto; padding:0 12px 40px;}
+  .history h2{font-size:14px; color:var(--muted); font-weight:600; margin:6px 4px 10px;}
+  .history ul{list-style:none; padding:0; margin:0;}
+  .history li{margin-bottom:8px;}
+  .history li a{display:block; background:var(--card); border-radius:10px; padding:11px 14px;
+                text-decoration:none; color:var(--ink); font-size:14.5px; box-shadow:0 1px 4px rgba(0,0,0,.05);}
+  .history li.cur a{color:var(--clay); font-weight:600;}
   footer{max-width:720px; margin:0 auto; padding:0 16px 30px; font-size:12px; color:var(--muted);}
   a.back{color:var(--clay); text-decoration:none; font-size:13px;}
 </style>
@@ -31,6 +41,7 @@
 <header>
   <h1>2026-10-23 数学练习</h1>
   <div class="sub">一年级 · 应用题 5 题 + 数的组合与分解 5 题</div>
+  
 </header>
 <main>
   <figure><img src="01-应用题.png" alt="一、应用题" loading="lazy"><figcaption>一、应用题</figcaption></figure>
@@ -41,8 +52,9 @@
   </details>
   <a class="pdf" href="2026-10-23-数学练习.pdf" target="_blank" rel="noopener">下载/打印 A4 版 PDF</a>
 </main>
+
 <footer>
-  <a class="back" href="../">← 看其他日期</a>
+  <a class="back" href="../">← 回到最新一天</a>
 </footer>
 </body>
 </html>
